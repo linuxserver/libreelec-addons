@@ -105,4 +105,30 @@ Please visit www.linuxserver.io for more information.
     <platform>all</platform>
   </extension>
 </addon>
+
+<addon id="docker.linuxserver.sonarr"
+       name="Sonarr (LinuxServer.io)"
+       version="1.0.0"
+       provider-name="linuxserver.io">
+  <requires>
+    <import addon="os.libreelec.tv" version="7.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Sonarr in a docker container</summary>
+    <description>
+Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.
+
+This is a docker container brought to you by the LinuxServer team.
+Please visit www.linuxserver.io for more information.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
