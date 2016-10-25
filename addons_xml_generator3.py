@@ -22,7 +22,12 @@
 # *  https://offshoregit.com/tknorris/tknorris-release-repo/raw/master/addons_xml_generator2.py
 # *  Based on code by j48antialias:
 # *  https://anarchintosh-projects.googlecode.com/files/addons_xml_generator.py
- 
+# *
+# *  Changes since v2:
+# *  - (assumed) zips reside in folder "download"
+# *  - md5 checksum creation added for zips
+# *  - Skip moving files and zip creation if zip file for the same version already exists
+
 """ addons.xml generator """
 
 import os
@@ -159,37 +164,42 @@ if (__name__ == "__main__"):
                     for elem in root.iter('addon'):
                         print('%s %s version: %s' % (x, elem.tag, elem.attrib['version']))
                         version = '-' + elem.attrib['version']                  
-                # #check if and move addon, changelog, fanart and icon to zipdir                       
-                for y in filesinfoldertozip: 
-                    # print('processing file: ' + os.path.join(rootdir,x,y))
-                    if re.search("addon|changelog|icon|fanart", y):
-                        shutil.copyfile(os.path.join(rootdir, x, y), os.path.join(zipsfolder, y))
-                        print('Copying %s to %s' % (y, zipsfolder))                
-                # #check for and zip the folders
-                print('Zipping %s and moving to %s\n' % (x, zipsfolder))
-                try:
-                    zipfolder(zipfilenamefirstpart + version + zipfilenamelastpart, foldertozip, zipsfolder, x)
-                    print('zipped with zipfolder')
+                # # #check for existing zips
+                if not os.path.exists(zipsfolder + x + version + '.zip'):
+                    # #check if and move addon, changelog, fanart and icon to zipdir                       
+                    for y in filesinfoldertozip: 
+                        # print('processing file: ' + os.path.join(rootdir,x,y))
+                        if re.search("addon|changelog|icon|fanart", y):
+                            shutil.copyfile(os.path.join(rootdir, x, y), os.path.join(zipsfolder, y))
+                            print('Copying %s to %s' % (y, zipsfolder))                
+                    # #check for and zip the folders
+                    print('Zipping %s and moving to %s\n' % (x, zipsfolder))
                     try:
-                        import md5
-                        m = md5.new(open("%s" % (zipsfolder + x + version + '.zip'), "r").read()).hexdigest()
-                    except ImportError:
-                        import hashlib
-                        m = hashlib.md5(open("%s" % (zipsfolder + x + version + '.zip'), "r", encoding="UTF-8").read().encode("UTF-8")).hexdigest()
-                    try:
-                        open("%s" % (zipsfolder + x + version + '.zip.md5'), "wb").write(m.encode("UTF-8"))
-                        print("zip.md5 file created\n")
-                    except Exception as e:
-                        print("An error occurred creating zip.md5 file!\n%s" % e)
-                except:
-                    if os.path.exists(zipsfolder + x + version + '.zip'):
-                        os.remove(zipsfolder + x + version + '.zip')
-                        print('trying shutil')
-                    try:
-                        shutil.move(shutil.make_archive(foldertozip + version, 'zip', rootdir, x), zipsfolder)
-                        print('zipped with shutil\n')
-                    except Exception as e:
-                        print('Cannot create zip file\nshutil %s\n' % e)
+                        zipfolder(zipfilenamefirstpart + version + zipfilenamelastpart, foldertozip, zipsfolder, x)
+                        print('zipped with zipfolder')
+                        # # #create md5 checksum for zips
+                        try:
+                            import md5
+                            m = md5.new(open("%s" % (zipsfolder + x + version + '.zip'), "r").read()).hexdigest()
+                        except ImportError:
+                            import hashlib
+                            m = hashlib.md5(open("%s" % (zipsfolder + x + version + '.zip'), "r", encoding="UTF-8").read().encode("UTF-8")).hexdigest()
+                        try:
+                            open("%s" % (zipsfolder + x + version + '.zip.md5'), "wb").write(m.encode("UTF-8"))
+                            print("zip.md5 file created\n")
+                        except Exception as e:
+                            print("An error occurred creating zip.md5 file!\n%s" % e)
+                    except:
+                        if os.path.exists(zipsfolder + x + version + '.zip'):
+                            os.remove(zipsfolder + x + version + '.zip')
+                            print('trying shutil')
+                        try:
+                            shutil.move(shutil.make_archive(foldertozip + version, 'zip', rootdir, x), zipsfolder)
+                            print('zipped with shutil\n')
+                        except Exception as e:
+                            print('Cannot create zip file\nshutil %s\n' % e)
+                else:
+                    print('Zip file for %s version %s already exists, skipping moving files and zip creation.\n' % (x, version)) 
     except Exception as e:
         print('Cannot create or move the needed files\n%s' % e)
     print('Done')

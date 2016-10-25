@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="docker.linuxserver.couchpotato"
+       name="CouchPotato (LinuxServer.io)"
+       version="1.0.0"
+       provider-name="linuxserver.io">
+  <requires>
+    <import addon="os.libreelec.tv" version="7.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>CouchPotato in a docker container</summary>
+    <description>
+CouchPotato is an automatic NZB and torrent downloader. You can keep a movies I want list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.
+
+This is a docker container brought to you by the LinuxServer team.
+Please visit www.linuxserver.io for more information.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>

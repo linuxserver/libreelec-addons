@@ -1,0 +1,5 @@
+docker.linuxserver.couchpotato:
+----------------------
+
+1.0.0
+-Initial release
