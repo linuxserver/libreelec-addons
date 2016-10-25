@@ -2,7 +2,7 @@
 <settings>
    <category   label="30000">
       <setting label="30001" type="lsep" />
-      <setting label="30004" type="text"   id="E_SUBDOMAINS"      default="public" />
-      <setting label="30005" type="text"   id="E_TOKEN"      default="public" />
+      <setting label="30004" type="text"   id="E_SUBDOMAINS"  default="public" />
+      <setting label="30005" type="text"   id="E_TOKEN"       default="public" />
    </category>
 </settings>

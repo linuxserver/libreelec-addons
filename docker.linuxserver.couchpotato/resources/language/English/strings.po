@@ -9,26 +9,18 @@ msgctxt "#30001"
 msgid "Note: Kodi remote sources can not be used as Docker volume host sources"
 msgstr ""
 
-msgctxt "#30002"
-msgid "Set VERSION to latest for plexpass releases"
-msgstr ""
-
-msgctxt "#30004"
-msgid "VERSION"
-msgstr ""
-
 msgctxt "#30005"
 msgid "Map /config"
 msgstr ""
 
 msgctxt "#30006"
-msgid "Map /data/tvshows"
+msgid "Map /movies"
 msgstr ""
 
 msgctxt "#30007"
-msgid "Map /data/movies"
+msgid "Map /downloads"
 msgstr ""
 
 msgctxt "#30008"
-msgid "Map /transcode"
+msgid "Listening port for web gui"
 msgstr ""
