@@ -1,0 +1,5 @@
+docker.linuxserver.plex:
+------------------------
+
+1.0.0
+- Initial addon

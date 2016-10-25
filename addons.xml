@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="docker.linuxserver.duckdns"
+       name="DuckDNS (LinuxServer.io)"
+       version="1.0.0"
+       provider-name="linuxserver.io">
+  <requires>
+    <import addon="os.libreelec.tv" version="7.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>DuckDNS dynamic dns updater as a Docker container</summary>
+    <description>
+Duckdns is a free dynamic DNS service hosted on Amazon VPC. Unlike most other free dynamic DNS providers, DuckDNS accounts do not require periodic user action to keep them alive. Visit www.duckdns.org to register your domain.
+
+This docker container is brought to you by the LinuxServer team.
+Please visit www.linuxserver.io for more information.
+    </description>
+    <disclaimer>
+Please visit www.duckdns.org to get a custom url and token
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="docker.linuxserver.plex"
+       name="Plex (LinuxServer.io)"
+       version="1.0.0"
+       provider-name="linuxserver.io">
+  <requires>
+    <import addon="os.libreelec.tv" version="7.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Plex Media Server as a Docker container</summary>
+    <description>
+Plex organizes video, music and photos from personal media libraries and streams them to smart televisions, streaming boxes and mobile devices.
+
+This is a docker container brought to you by the LinuxServer team.
+Please visit www.linuxserver.io for more information.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="repository.linuxserver.x86"
+  name="Linuxserver x86 Add-ons"
+  version="1.0.0"
+  provider-name="linuxserver.io">
+  <requires>
+    <import addon="xbmc.addon"
+            version="16.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository"
+             name="Unofficial Linuxserver x86 Add-on Repository">
+    <info compressed="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons-x86/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/linuxserver/libreelec-addons-x86/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons-x86/master/download</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Install add-ons from linuxserver x86 repository</summary>
+    <description>
+Download and install x86 docker container add-ons from the unofficial linuxserver addon repository.
+
+Please visit www.linuxserver.io for more information.
+    </description>
+    <disclaimer> </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
