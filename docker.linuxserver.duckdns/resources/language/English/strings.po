@@ -6,11 +6,11 @@ msgid "Configuration"
 msgstr ""
 
 msgctxt "#30001"
-msgid "Note: Enter your subdomains and token for duckdns.org"
+msgid "Note: You can enter multiple subdomains (comma separated, no spaces)"
 msgstr ""
 
 msgctxt "#30004"
-msgid "SUBDOMAINS (comma separated, no spaces)"
+msgid "SUBDOMAINS"
 msgstr ""
 
 msgctxt "#30005"

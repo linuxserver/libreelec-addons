@@ -18,17 +18,17 @@ msgid "VERSION"
 msgstr ""
 
 msgctxt "#30005"
-msgid "Map container folder /config"
+msgid "Map /config"
 msgstr ""
 
 msgctxt "#30006"
-msgid "Map container folder /data/tvshows"
+msgid "Map /data/tvshows"
 msgstr ""
 
 msgctxt "#30007"
-msgid "Map container folder /data/movies"
+msgid "Map /data/movies"
 msgstr ""
 
 msgctxt "#30008"
-msgid "Map container folder /transcode"
+msgid "Map /transcode"
 msgstr ""
