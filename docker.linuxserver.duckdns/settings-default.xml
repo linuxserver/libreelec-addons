@@ -1,4 +1,5 @@
 <settings>
+    <setting id="V_config" value="/storage/.kodi/userdata/addon_data/docker.linuxserver.duckdns" />
     <setting id="E_SUBDOMAINS" value="" />
     <setting id="E_TOKEN"      value="" />
 </settings>

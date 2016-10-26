@@ -1,5 +1,5 @@
 <settings>
-    <setting id="V_config" value="/storage/.kodi/userdata/addon_data/docker.linuxserver.couchpotato/config" />/
+    <setting id="V_config" value="/storage/.kodi/userdata/addon_data/docker.linuxserver.couchpotato/config" />
     <setting id="V_movies" value="/storage/videos" />
     <setting id="V_downloads" value="/storage/downloads/downloadclient-downloads" />
     <setting id="P_port" value="5050" />
