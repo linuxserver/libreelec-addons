@@ -1,0 +1,7 @@
+<settings>
+    <setting id="V_config" value="/storage/.kodi/userdata/addon_data/docker.linuxserver.sabnzbd/config" />
+    <setting id="V_downloads" value="/storage/downloads/downloadclient-downloads" />
+    <setting id="V_incomplete" value="/storage/downloads/downloadclient-incomplete" />
+    <setting id="P_port" value="8081" />
+    <setting id="P_port2" value="9091" />
+</settings>
