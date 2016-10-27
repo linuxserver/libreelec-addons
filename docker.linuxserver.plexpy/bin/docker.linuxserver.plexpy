@@ -13,5 +13,5 @@ docker run --name="$name" \
            -e TZ="$(xmlstarlet sel -t -m '//timezone[1]' -v . -n </storage/.kodi/userdata/guisettings.xml)" \
            -v "$V_config":/config \
            -v "$V_logs":/logs \
-           -p "$P_port":8081 \
+           -p "$P_port":8181 \
            linuxserver/plexpy:latest
