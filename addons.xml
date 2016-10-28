@@ -28,7 +28,7 @@ Please visit www.linuxserver.io for more information.
 
 <addon id="docker.linuxserver.duckdns"
        name="DuckDNS (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
