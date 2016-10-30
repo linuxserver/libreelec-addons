@@ -2,7 +2,7 @@
 <addons>
 <addon id="docker.linuxserver.couchpotato"
        name="CouchPotato (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -28,7 +28,7 @@ Please visit www.linuxserver.io for more information.
 
 <addon id="docker.linuxserver.duckdns"
        name="DuckDNS (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -55,7 +55,7 @@ Please visit www.duckdns.org to get a custom url and token
 
 <addon id="docker.linuxserver.plexpy"
        name="PlexPy (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -81,7 +81,7 @@ Please visit www.linuxserver.io for more information.
 
 <addon id="docker.linuxserver.nzbget"
        name="Nzbget (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -107,9 +107,36 @@ Default user:pass are nzbget:tegbzn6789 (Change ASAP)
   </extension>
 </addon>
 
+<addon
+  id="repository.linuxserver.docker"
+  name="Linuxserver Docker Add-ons"
+  version="1.0.3"
+  provider-name="linuxserver.io">
+  <requires>
+    <import addon="xbmc.addon"
+            version="16.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository"
+             name="Linuxserver Docker Add-on Repository">
+    <info compressed="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/download</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Install add-ons from linuxserver docker repository</summary>
+    <description>
+Download and install docker container add-ons from the linuxserver repository.
+
+Please visit www.linuxserver.io for more information.
+    </description>
+    <disclaimer> </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="docker.linuxserver.plex"
        name="Plex (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -135,7 +162,7 @@ Please visit www.linuxserver.io for more information.
 
 <addon id="docker.linuxserver.sabnzbd"
        name="SABnzbd (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -159,36 +186,9 @@ Please visit www.linuxserver.io for more information.
   </extension>
 </addon>
 
-<addon
-  id="repository.linuxserver.x86"
-  name="Linuxserver x86 Add-ons"
-  version="1.0.0"
-  provider-name="linuxserver.io">
-  <requires>
-    <import addon="xbmc.addon"
-            version="16.0.0"/>
-  </requires>
-  <extension point="xbmc.addon.repository"
-             name="Unofficial Linuxserver x86 Add-on Repository">
-    <info compressed="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons-x86/master/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/linuxserver/libreelec-addons-x86/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons-x86/master/download</datadir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Install add-ons from linuxserver x86 repository</summary>
-    <description>
-Download and install x86 docker container add-ons from the unofficial linuxserver addon repository.
-
-Please visit www.linuxserver.io for more information.
-    </description>
-    <disclaimer> </disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="docker.linuxserver.sonarr"
        name="Sonarr (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>

@@ -1,6 +1,9 @@
 docker.linuxserver.duckdns:
 ------------------------
 
+1.0.2
+- Unified addon for x86_64 and arm
+
 1.0.1
 - Switch logging to local file for easy access
 
