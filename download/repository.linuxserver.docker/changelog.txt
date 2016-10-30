@@ -1,0 +1,13 @@
+repository.linuxserver:
+-----------------------
+1.0.3
+- Unified repo (x86_64 and arm)
+
+1.0.2
+- Update info and add hashes
+
+1.0.1
+- Add icon
+
+1.0.0 (2016-10-18)
+- Initial release
