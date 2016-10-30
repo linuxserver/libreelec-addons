@@ -2,7 +2,7 @@
 <addon
   id="repository.linuxserver.docker"
   name="Linuxserver Docker Add-ons"
-  version="1.0.0"
+  version="1.0.3"
   provider-name="linuxserver.io">
   <requires>
     <import addon="xbmc.addon"
