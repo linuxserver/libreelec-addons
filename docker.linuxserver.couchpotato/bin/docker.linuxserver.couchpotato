@@ -19,8 +19,7 @@ fi
 
 docker rm "$name" 2>/dev/null
 docker pull "$DOCKERIMAGE":latest
-[[ ! -z "$(docker images | grep "$DOCKERIMAGE" | grep '<none>' | sed 's/\s\+/\t/g' | cut -f3)" ]] && \
-  docker rmi $(docker images | grep "$DOCKERIMAGE" | grep '<none>' | sed 's/\s\+/\t/g' | cut -f3)
+docker rmi $(docker images | grep "$DOCKERIMAGE" | grep '<none>' | sed 's/\s\+/\t/g' | cut -f3) 2> /dev/null
 docker run --name="$name" \
            -e PUID="0" \
            -e PGID="0" \
