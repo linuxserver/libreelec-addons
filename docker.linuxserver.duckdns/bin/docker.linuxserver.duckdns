@@ -5,7 +5,7 @@ name="$(basename $0)"
 oe_setup_addon "$name"
 
 #get arch variable from os
-LEARCHVAR=`awk 'BEGIN { FS="." } /LIBREELEC_ARCH/ { print $2 }' /etc/os-release | sed 's/.$//'`
+LEARCHVAR=`sed -e '/LIBREELEC_ARCH/ !d' -e 's/[^.]*\.\([^"]*\).*/\1/' /etc/os-release`
 
 #figure out which docker hub image to use
 if [ "$LEARCHVAR" = "x86_64" ]; then
