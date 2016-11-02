@@ -1,5 +1,5 @@
-docker.linuxserver.plexpy:
---------------------------
+docker.linuxserver.mariadb:
+---------------------------
 
 1.0.0
 - Initial release
