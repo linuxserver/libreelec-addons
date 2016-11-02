@@ -14,6 +14,6 @@ msgid "Map /config"
 msgstr ""
 
 msgctxt "#30006"
-msgid "Listening port for webgui"
+msgid "Listening port"
 msgstr ""
 
