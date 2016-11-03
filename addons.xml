@@ -155,7 +155,19 @@ Please visit www.linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
+    <news>
+docker.linuxserver.resilio-sync:
+--------------------------------
+
+1.0.0
+- Initial release
+    </news>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
