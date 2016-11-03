@@ -1,0 +1,5 @@
+docker.linuxserver.resilio-sync:
+--------------------------------
+
+1.0.0
+- Initial release
