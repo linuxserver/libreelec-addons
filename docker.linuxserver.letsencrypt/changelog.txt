@@ -1,5 +1,8 @@
 docker.linuxserver.letsencrypt:
 -------------------------------
 
+1.0.1
+- Change user to nobody
+
 1.0.0
 - Initial release
