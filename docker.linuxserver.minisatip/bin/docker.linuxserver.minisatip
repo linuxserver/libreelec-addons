@@ -24,7 +24,6 @@ docker run --name="$name" \
            -e PUID="0" \
            -e PGID="0" \
            -e TZ="$(xmlstarlet sel -t -m '//timezone[1]' -v . -n </storage/.kodi/userdata/guisettings.xml)" \
-           -v "$V_config":/config \
            -v "$P_port":8875 \
            -p "$P_port2":554 \
            -p "$P_port3":1900/udp \

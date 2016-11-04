@@ -1,5 +1,4 @@
 <settings>
-    <setting id="V_config" value="/storage/.kodi/userdata/addon_data/docker.linuxserver.minisatip/config" />
     <setting id="P_port"  value="8875" />
     <setting id="P_port2" value="554" />
     <setting id="P_port3" value="1900" />
