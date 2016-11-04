@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.nzbget"
        name="Nzbget (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -21,8 +21,26 @@ Please visit www.linuxserver.io for more information.
 
 Default user:pass are nzbget:tegbzn6789 (Change ASAP)
     </description>
+    <news>
+docker.linuxserver.nzbget:
+--------------------------
+
+1.0.2
+- Change user to nobody
+
+1.0.1
+- Unified addon for x86_64 and arm
+
+1.0.0
+- Initial release
+    </news>
     <disclaimer>
     </disclaimer>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>

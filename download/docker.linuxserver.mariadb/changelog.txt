@@ -1,5 +1,8 @@
 docker.linuxserver.mariadb:
 ---------------------------
 
+1.0.2
+- Run as user nobody
+
 1.0.0
 - Initial release

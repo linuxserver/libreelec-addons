@@ -1,6 +1,9 @@
 docker.linuxserver.duckdns:
 ------------------------
 
+1.0.3
+- Run as user nobody
+
 1.0.2
 - Unified addon for x86_64 and arm
 

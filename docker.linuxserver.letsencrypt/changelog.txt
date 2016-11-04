@@ -1,6 +1,9 @@
 docker.linuxserver.letsencrypt:
 -------------------------------
 
+1.0.2
+- Change group to users
+
 1.0.1
 - Change user to nobody
 

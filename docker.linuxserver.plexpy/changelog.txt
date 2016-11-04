@@ -1,6 +1,9 @@
 docker.linuxserver.plexpy:
 --------------------------
 
+1.0.2
+- Run as user nobody
+
 1.0.1
 - Unified addon for x86_64 and arm
 
