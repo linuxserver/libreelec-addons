@@ -2,7 +2,7 @@
 <addons>
 <addon id="docker.linuxserver.mariadb"
        name="MariaDB (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -22,13 +22,28 @@ Please visit www.linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
+    <news>
+docker.linuxserver.mariadb:
+---------------------------
+
+1.0.1
+- Change user to nobody
+
+1.0.0
+- Initial release
+    </news>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
 <addon id="docker.linuxserver.couchpotato"
        name="CouchPotato (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -48,13 +63,31 @@ Please visit www.linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
+    <news>
+docker.linuxserver.couchpotato:
+-------------------------------
+
+1.0.2
+- Run as user nobody
+
+1.0.1
+- Unified addon for x86_64 and arm
+
+1.0.0
+- Initial release
+    </news>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
 <addon id="docker.linuxserver.duckdns"
        name="DuckDNS (LinuxServer.io)"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -75,13 +108,34 @@ Please visit www.linuxserver.io for more information.
     <disclaimer>
 Please visit www.duckdns.org to get a custom url and token
     </disclaimer>
+    <news>
+docker.linuxserver.duckdns:
+------------------------
+
+1.0.3
+- Run as user nobody
+
+1.0.2
+- Unified addon for x86_64 and arm
+
+1.0.1
+- Switch logging to local file for easy access
+
+1.0.0
+- Initial addon
+    </news>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
 <addon id="docker.linuxserver.plexpy"
        name="PlexPy (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -101,13 +155,31 @@ Please visit www.linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
+    <news>
+docker.linuxserver.plexpy:
+--------------------------
+
+1.0.2
+- Run as user nobody
+
+1.0.1
+- Unified addon for x86_64 and arm
+
+1.0.0
+- Initial release
+    </news>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
 <addon id="docker.linuxserver.minisatip"
        name="Minisatip (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -131,6 +203,9 @@ Please visit www.linuxserver.io for more information.
 docker.linuxserver.minisatip:
 -----------------------------
 
+1.0.1
+- Run as user nobody
+
 1.0.0
 - Initial release
     </news>
@@ -145,7 +220,7 @@ docker.linuxserver.minisatip:
 
 <addon id="docker.linuxserver.nzbget"
        name="Nzbget (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -165,15 +240,33 @@ Please visit www.linuxserver.io for more information.
 
 Default user:pass are nzbget:tegbzn6789 (Change ASAP)
     </description>
+    <news>
+docker.linuxserver.nzbget:
+--------------------------
+
+1.0.2
+- Change user to nobody
+
+1.0.1
+- Unified addon for x86_64 and arm
+
+1.0.0
+- Initial release
+    </news>
     <disclaimer>
     </disclaimer>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
 <addon id="docker.linuxserver.resilio-sync"
        name="Resilio Sync (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -196,6 +289,9 @@ Please visit www.linuxserver.io for more information.
     <news>
 docker.linuxserver.resilio-sync:
 --------------------------------
+
+1.0.1
+- Run as user nobody
 
 1.0.0
 - Initial release
@@ -238,7 +334,7 @@ Please visit www.linuxserver.io for more information.
 
 <addon id="docker.linuxserver.plex"
        name="Plex (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -258,13 +354,31 @@ Please visit www.linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
+    <news>
+docker.linuxserver.plex:
+------------------------
+
+1.0.2
+- Run as user nobody
+
+1.0.1
+- Unified addon for x86_64 and arm
+
+1.0.0
+- Initial addon
+    </news>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
 <addon id="docker.linuxserver.sabnzbd"
        name="SABnzbd (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -284,13 +398,31 @@ Please visit www.linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
+    <news>
+docker.linuxserver.sabnzbd:
+---------------------------
+
+1.0.2
+- Run as user nobody
+
+1.0.1
+- Unified addon for x86_64 and arm
+
+1.0.0
+- Initial release
+    </news>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
 <addon id="docker.linuxserver.sonarr"
        name="Sonarr (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -310,13 +442,31 @@ Please visit www.linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
+    <news>
+docker.linuxserver.sonarr:
+--------------------------
+
+1.0.2
+- Run as user nobody
+
+1.0.1
+- Unified addon for x86_64 and arm
+
+1.0.0
+-Initial release
+    </news>
     <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
 <addon id="docker.linuxserver.beets"
        name="Beets (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -340,6 +490,9 @@ Please visit www.linuxserver.io for more information.
 docker.linuxserver.beets:
 -------------------------
 
+1.0.1
+- Run as user nobody
+
 1.0.0
 - Initial release
     </news>
@@ -354,7 +507,7 @@ docker.linuxserver.beets:
 
 <addon id="docker.linuxserver.letsencrypt"
        name="Nginx Letsencrypt (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -380,6 +533,9 @@ Please visit www.linuxserver.io for more information.
     <news>
 docker.linuxserver.letsencrypt:
 -------------------------------
+
+1.0.2
+- Change group to users
 
 1.0.1
 - Change user to nobody
