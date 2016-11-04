@@ -16,6 +16,8 @@
     <description>
 This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.
 
+***Port 443 on the router has to be forwarded to this machine.
+
 This is a docker container brought to you by the LinuxServer team.
 Please visit www.linuxserver.io for more information.
     </description>
