@@ -420,6 +420,44 @@ docker.linuxserver.sabnzbd:
   </extension>
 </addon>
 
+<addon id="docker.linuxserver.photoshow"
+       name="Photoshow (LinuxServer.io)"
+       version="1.0.0"
+       provider-name="linuxserver.io">
+  <requires>
+    <import addon="os.libreelec.tv" version="7.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Photoshow in a docker container</summary>
+    <description>
+Photoshow is gallery software at its easiest, it doesn't even require a database.
+
+This is a docker container brought to you by the LinuxServer team.
+Please visit www.linuxserver.io for more information.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <news>
+docker.linuxserver.photoshow:
+-----------------------------
+
+1.0.0
+- Initial release
+    </news>
+    <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="docker.linuxserver.sonarr"
        name="Sonarr (LinuxServer.io)"
        version="1.0.2"
