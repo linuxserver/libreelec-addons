@@ -621,7 +621,7 @@ docker.linuxserver.beets:
 
 <addon id="docker.linuxserver.letsencrypt"
        name="Nginx Letsencrypt (LinuxServer.io)"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -647,6 +647,9 @@ Please visit www.linuxserver.io for more information.
     <news>
 docker.linuxserver.letsencrypt:
 -------------------------------
+
+1.0.3
+- Update dockerhub image links
 
 1.0.2
 - Change group to users

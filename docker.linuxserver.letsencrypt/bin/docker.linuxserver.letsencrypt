@@ -2,6 +2,7 @@
 
 name="$(basename $0)"
 . /etc/profile
+. /storage/.cache/timezone
 oe_setup_addon "$name"
 
 #get arch variable from os
@@ -9,9 +10,9 @@ LEARCHVAR=`sed -e '/LIBREELEC_ARCH/ !d' -e 's/[^.]*\.\([^"]*\).*/\1/' /etc/os-re
 
 #figure out which docker hub image to use
 if [ "$LEARCHVAR" = "x86_64" ]; then
-  DOCKERIMAGE="lsiodev/letsencrypt"
+  DOCKERIMAGE="linuxserver/letsencrypt"
 elif [ "$LEARCHVAR" = "arm" ]; then
-  DOCKERIMAGE="lsiodev/letsencrypt-armhf"
+  DOCKERIMAGE="lsioarmhf/letsencrypt"
 else
   echo "sorry, arm or x86_64 only"
   exit 1
@@ -24,7 +25,7 @@ docker run --name="$name" \
            --privileged \
            -e PUID="65534" \
            -e PGID="100" \
-           -e TZ="$(xmlstarlet sel -t -m '//timezone[1]' -v . -n </storage/.kodi/userdata/guisettings.xml)" \
+           -e TZ="$TIMEZONE" \
            -v "$V_config":/config \
            -p "$P_port":443 \
            -e URL="$E_url" \
