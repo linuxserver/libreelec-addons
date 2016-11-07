@@ -20,3 +20,7 @@ msgstr ""
 msgctxt "#30010"
 msgid "Run Options"
 msgstr ""
+
+msgctxt "#30011"
+msgid "Device location"
+msgstr ""

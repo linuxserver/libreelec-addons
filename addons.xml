@@ -297,7 +297,7 @@ docker.linuxserver.znc:
 
 <addon id="docker.linuxserver.minisatip"
        name="Minisatip (LinuxServer.io)"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -320,6 +320,9 @@ Please visit www.linuxserver.io for more information.
     <news>
 docker.linuxserver.minisatip:
 -----------------------------
+
+1.0.2
+- Add device setting
 
 1.0.1
 - Run as user nobody
