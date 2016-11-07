@@ -1,6 +1,9 @@
 docker.linuxserver.minisatip:
 -----------------------------
 
+1.0.2
+- Add device setting
+
 1.0.1
 - Run as user nobody
 

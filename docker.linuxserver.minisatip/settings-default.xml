@@ -1,6 +1,0 @@
-<settings>
-    <setting id="P_port"  value="8875" />
-    <setting id="P_port2" value="554" />
-    <setting id="P_port3" value="1900" />
-    <setting id="E_opt"   value="" />
-</settings>
