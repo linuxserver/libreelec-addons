@@ -1,0 +1,5 @@
+docker.linuxserver.znc:
+-----------------------
+
+1.0.0
+- Initial release
