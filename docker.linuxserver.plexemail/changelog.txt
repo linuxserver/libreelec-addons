@@ -1,5 +1,8 @@
 docker.linuxserver.plexemail:
 -----------------------------
 
+1.0.1
+- Fix default settings
+
 1.0.0
 - Initial release

@@ -2,7 +2,7 @@
 <addons>
 <addon id="docker.linuxserver.quassel-core"
        name="Quassel Core (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -28,6 +28,9 @@ Please visit www.linuxserver.io for more information.
 docker.linuxserver.quassel-core:
 --------------------------------
 
+1.0.1
+- Fix default settings
+
 1.0.0
 - Initial release
     </news>
@@ -42,7 +45,7 @@ docker.linuxserver.quassel-core:
 
 <addon id="docker.linuxserver.plexemail"
        name="PlexEmail (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -53,7 +56,7 @@ docker.linuxserver.quassel-core:
     <provides></provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Photoshow in a docker container</summary>
+    <summary>PlexEmail in a docker container</summary>
     <description>
 PlexEmail is a script that aggregates all new TV and movie releases for the past x days then writes to your web directory and sends out an email.
 
@@ -65,6 +68,9 @@ Please visit www.linuxserver.io for more information.
     <news>
 docker.linuxserver.plexemail:
 -----------------------------
+
+1.0.1
+- Fix default settings
 
 1.0.0
 - Initial release
@@ -257,7 +263,7 @@ docker.linuxserver.plexpy:
 
 <addon id="docker.linuxserver.znc"
        name="ZNC (LinuxServer.io)"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -283,6 +289,9 @@ Please visit www.linuxserver.io for more information.
 docker.linuxserver.znc:
 -----------------------
 
+1.0.1
+- Fix default settings
+
 1.0.0
 - Initial release
     </news>
@@ -297,7 +306,7 @@ docker.linuxserver.znc:
 
 <addon id="docker.linuxserver.minisatip"
        name="Minisatip (LinuxServer.io)"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -320,6 +329,9 @@ Please visit www.linuxserver.io for more information.
     <news>
 docker.linuxserver.minisatip:
 -----------------------------
+
+1.0.3
+- Fix default settings
 
 1.0.2
 - Add device setting

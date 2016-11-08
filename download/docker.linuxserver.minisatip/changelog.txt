@@ -1,6 +1,9 @@
 docker.linuxserver.minisatip:
 -----------------------------
 
+1.0.3
+- Fix default settings
+
 1.0.2
 - Add device setting
 
