@@ -14,7 +14,7 @@ msgid "Map /config"
 msgstr ""
 
 msgctxt "#30006"
-msgid "Version (or 'latest')"
+msgid "Version (tag)"
 msgstr ""
 
 msgctxt "#30007"

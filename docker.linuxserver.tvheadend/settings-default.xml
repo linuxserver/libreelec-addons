@@ -1,6 +1,6 @@
 <settings>
     <setting id="V_config"   value="/storage/.kodi/userdata/addon_data/docker.linuxserver.tvheadend/config" />
-    <setting id="E_version"  value="stable-4.0.9" />
+    <setting id="E_version"  value="latest" />
     <setting id="D_dev_port" value="false" />
     <setting id="P_port"     value="9981" />
     <setting id="P_port2"    value="9982" />
