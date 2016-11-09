@@ -33,4 +33,4 @@ docker run --name="$name" \
            -e PGID="100" \
            -e TZ="$TIMEZONE" \
            ${DOCKEROPTS} \
-           "$DOCKERIMAGE":latest
+           "$DOCKERIMAGE":"$E_version"

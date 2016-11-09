@@ -13,6 +13,10 @@ msgctxt "#30005"
 msgid "Map /config"
 msgstr ""
 
+msgctxt "#30006"
+msgid "Version (or 'latest')"
+msgstr ""
+
 msgctxt "#30007"
 msgid "Pass DVB card"
 msgstr ""
