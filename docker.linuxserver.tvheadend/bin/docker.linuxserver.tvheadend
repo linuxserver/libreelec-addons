@@ -9,7 +9,7 @@ oe_setup_addon "$name"
 LEARCHVAR=`sed -e '/LIBREELEC_ARCH/ !d' -e 's/[^.]*\.\([^"]*\).*/\1/' /etc/os-release`
 
 #figure out whether to use dvb card or ip
-if [ "$D_dev-port" = "true" ]; then
+if [ "$D_dev_port" = "true" ]; then
   DOCKEROPTS="--net=host --device=\"$D_device\""
 else
   DOCKEROPTS="-p \"$P_port\":9981 -p \"P_port2\":9982"
@@ -17,9 +17,9 @@ fi
 
 #figure out which docker hub image to use
 if [ "$LEARCHVAR" = "x86_64" ]; then
-  DOCKERIMAGE="linuxserver/minisatip"
+  DOCKERIMAGE="linuxserver/tvheadend"
 elif [ "$LEARCHVAR" = "arm" ]; then
-  DOCKERIMAGE="lsioarmhf/minisatip"
+  DOCKERIMAGE="lsioarmhf/tvheadend"
 else
   echo "sorry, arm or x86_64 only"
   exit 1
@@ -32,5 +32,5 @@ docker run --name="$name" \
            -e PUID="65534" \
            -e PGID="100" \
            -e TZ="$TIMEZONE" \
-           "$DOCKEROPTS" \
+           ${DOCKEROPTS} \
            "$DOCKERIMAGE":latest
