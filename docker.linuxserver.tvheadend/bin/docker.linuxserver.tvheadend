@@ -12,7 +12,7 @@ LEARCHVAR=`sed -e '/LIBREELEC_ARCH/ !d' -e 's/[^.]*\.\([^"]*\).*/\1/' /etc/os-re
 if [ "$D_dev_port" = "true" ]; then
   DOCKEROPTS="--net=host --device=\"$D_device\""
 else
-  DOCKEROPTS="-p \"$P_port\":9981 -p \"P_port2\":9982"
+  DOCKEROPTS="-p ${P_port}:9981 -p ${P_port2}:9982"
 fi
 
 #figure out which docker hub image to use
@@ -26,7 +26,7 @@ else
 fi
 
 docker rm "$name" 2>/dev/null
-docker pull "$DOCKERIMAGE":latest
+docker pull "$DOCKERIMAGE":"$E_version"
 docker rmi $(docker images | grep "$DOCKERIMAGE" | grep '<none>' | sed 's/\s\+/\t/g' | cut -f3) 2> /dev/null
 docker run --name="$name" \
            -e PUID="65534" \
