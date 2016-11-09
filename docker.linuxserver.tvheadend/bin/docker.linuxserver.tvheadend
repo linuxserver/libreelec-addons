@@ -10,9 +10,9 @@ LEARCHVAR=`sed -e '/LIBREELEC_ARCH/ !d' -e 's/[^.]*\.\([^"]*\).*/\1/' /etc/os-re
 
 #figure out whether to use dvb card or ip
 if [ "$D_dev_port" = "true" ]; then
-  DOCKEROPTS="--net=host --device=\"$D_device\""
+  DOCKEROPTS="--device=\"$D_device\" -p ${P_port}:9981 -p ${P_port2}:9982"
 else
-  DOCKEROPTS="-p ${P_port}:9981 -p ${P_port2}:9982"
+  DOCKEROPTS="--net=host"
 fi
 
 #figure out which docker hub image to use
