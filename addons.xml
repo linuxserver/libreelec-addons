@@ -591,6 +591,44 @@ docker.linuxserver.sabnzbd:
   </extension>
 </addon>
 
+<addon id="docker.linuxserver.thelounge"
+       name="TheLounge (LinuxServer.io)"
+       version="1.0.0"
+       provider-name="linuxserver.io">
+  <requires>
+    <import addon="os.libreelec.tv" version="7.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>TheLounge in a docker container</summary>
+    <description>
+TheLounge (a fork of shoutIRC) is a web IRC client that you host on your own server. * Multiple user support * Stays connected even when you close the browser * Connect from multiple devices at once * Responsive layout — works well on your smartphone
+
+This is a docker container brought to you by the LinuxServer team.
+Please visit www.linuxserver.io for more information.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <news>
+docker.linuxserver.thelounge:
+-----------------------------
+
+1.0.0
+- Initial release
+    </news>
+    <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="docker.linuxserver.muximux"
        name="Muximux (LinuxServer.io)"
        version="1.0.0"
