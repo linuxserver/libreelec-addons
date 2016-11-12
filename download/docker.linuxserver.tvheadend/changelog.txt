@@ -1,5 +1,8 @@
 docker.linuxserver.tvheadend:
 -----------------------------
 
+1.0.1
+- Fix config location
+
 1.0.0
 - Initial release

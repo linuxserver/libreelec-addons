@@ -32,5 +32,6 @@ docker run --name="$name" \
            -e PUID="65534" \
            -e PGID="100" \
            -e TZ="$TIMEZONE" \
+           -v "$V_config":/config \
            ${DOCKEROPTS} \
            "$DOCKERIMAGE":"$E_version"
