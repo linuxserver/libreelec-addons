@@ -9,14 +9,16 @@ oe_setup_addon "$name"
 LEARCHVAR=`sed -e '/LIBREELEC_ARCH/ !d' -e 's/[^.]*\.\([^"]*\).*/\1/' /etc/os-release`
 
 #figure out number of devices to use
-if [ "$D_device2e" = "false" ]; then
-  D_devices="--device=\"$D_device\""
-else
-  D_devices="--device=\"$D_device\" --device=\"$D_device2\""
-  if [ "$D_device3e" = "true" ]; then
-    D_devices="$D_devices --device=\"$D_device3\""
-    if [ "$D_device4e" = "true" ]; then
-      D_devices="$D_devices --device=\"$D_device4\""
+D_devices=""
+if [ "$D_device1e" = "true" ]; then
+  D_devices="--device=${D_device1} -p ${P_portd1}:${P_portd1}"
+  if [ "$D_device2e" = "true" ]; then
+    D_devices="$D_devices --device=${D_device2} -p ${P_portd2}:${P_portd2}"
+    if [ "$D_device3e" = "true" ]; then
+      D_devices="$D_devices --device=${D_device3} -p ${P_portd3}:${P_portd3}"
+      if [ "$D_device4e" = "true" ]; then
+        D_devices="$D_devices --device=${D_device4} -p ${P_portd4}:${P_portd4}"
+      fi
     fi
   fi
 fi
