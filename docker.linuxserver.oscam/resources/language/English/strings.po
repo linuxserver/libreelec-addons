@@ -18,29 +18,49 @@ msgid "Webui port"
 msgstr ""
 
 msgctxt "#30007"
-msgid "Card location"
+msgid "Enable 1st card"
 msgstr ""
 
 msgctxt "#30008"
-msgid "Enable 2nd card"
+msgid "1st card location"
 msgstr ""
 
 msgctxt "#30009"
-msgid "2nd Card location"
+msgid "1st card port"
 msgstr ""
 
 msgctxt "#30010"
-msgid "Enable 3rd card"
+msgid "Enable 2nd card"
 msgstr ""
 
 msgctxt "#30011"
-msgid "3rd card location"
+msgid "2nd card location"
 msgstr ""
 
 msgctxt "#30012"
-msgid "Enable 4th card"
+msgid "2nd card port"
 msgstr ""
 
 msgctxt "#30013"
+msgid "Enable 3rd card"
+msgstr ""
+
+msgctxt "#30014"
+msgid "3rd card location"
+msgstr ""
+
+msgctxt "#30015"
+msgid "3rd card port"
+msgstr ""
+
+msgctxt "#30016"
+msgid "Enable 4th card"
+msgstr ""
+
+msgctxt "#30017"
 msgid "4th card location"
+msgstr ""
+
+msgctxt "#30018"
+msgid "4th card port"
 msgstr ""
