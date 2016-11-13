@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+   <category   label="30000">
+      <setting label="30005" type="folder" id="V_config"     default="/storage/.kodi/userdata/addon_data/docker.linuxserver.oscam/config"    option="writeable" />
+      <setting label="30006" type="number" id="P_port"       default="8888" />
+      <setting label="30007" type="text"   id="D_device"     default="/dev/ttyUSB0" />
+      <setting label="30008" type="bool"   id="D_device2e"   default="false" />
+      <setting label="30009" type="text"   id="D_device2"    default="/dev/ttyUSB1" enable="eq(-1,true)" />
+      <setting label="30010" type="bool"   id="D_device3e"   default="false" />
+      <setting label="30011" type="text"   id="D_device3"    default="/dev/ttyUSB2" enable="eq(-1,true)" />
+      <setting label="30012" type="bool"   id="D_device4e"   default="false" />
+      <setting label="30013" type="text"   id="D_device4"    default="/dev/ttyUSB3" enable="eq(-1,true)" />
+   </category>
+</settings>
