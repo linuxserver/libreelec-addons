@@ -1,6 +1,9 @@
 docker.linuxserver.duckdns:
 ------------------------
 
+1.0.4
+- Change default settings so container doesn't continuously restart
+
 1.0.3
 - Run as user nobody
 
