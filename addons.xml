@@ -130,7 +130,7 @@ docker.linuxserver.couchpotato:
 
 <addon id="docker.linuxserver.duckdns"
        name="DuckDNS (LinuxServer.io)"
-       version="1.0.4"
+       version="1.0.5"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -154,6 +154,9 @@ Please visit www.duckdns.org to get a custom url and token
     <news>
 docker.linuxserver.duckdns:
 ------------------------
+
+1.0.5
+- Update image links
 
 1.0.4
 - Change default settings so container doesn't continuously restart
