@@ -1,5 +1,8 @@
 repository.linuxserver:
 -----------------------
+1.0.4
+- Tweaked some naming conventions
+
 1.0.3
 - Unified repo (x86_64 and arm)
 

@@ -487,25 +487,25 @@ docker.linuxserver.resilio-sync:
 
 <addon
   id="repository.linuxserver.docker"
-  name="Linuxserver Docker Add-ons"
-  version="1.0.3"
+  name="LinuxServer.io's Docker Add-ons"
+  version="1.0.4"
   provider-name="linuxserver.io">
   <requires>
     <import addon="xbmc.addon"
             version="16.0.0"/>
   </requires>
   <extension point="xbmc.addon.repository"
-             name="Linuxserver Docker Add-on Repository">
+             name="LinuxServer.io's Docker Add-on Repository">
     <info compressed="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/addons.xml</info>
     <checksum>https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/addons.xml.md5</checksum>
     <datadir zip="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/download</datadir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Install add-ons from linuxserver docker repository</summary>
+    <summary>Install add-ons from LinuxServer.io's docker repository</summary>
     <description>
-Download and install docker container add-ons from the linuxserver repository.
+Download and install docker container add-ons from the LinuxServer.io repository.
 
-Please visit www.linuxserver.io for more information.
+Please visit https://linuxserver.io for more information.
     </description>
     <disclaimer> </disclaimer>
     <platform>all</platform>
