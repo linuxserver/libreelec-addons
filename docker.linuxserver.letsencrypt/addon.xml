@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.letsencrypt"
        name="Nginx Letsencrypt (LinuxServer.io)"
-       version="1.0.3"
-       provider-name="linuxserver.io">
+       version="1.0.4"
+       provider-name="LinuxServer.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -20,13 +20,16 @@ This container sets up an Nginx webserver and reverse proxy with php support and
 ***During first run, dhparams are generated before the webserver is up, which may take over an hour especially on arm.
 
 This is a docker container brought to you by the LinuxServer team.
-Please visit www.linuxserver.io for more information.
+Please visit https://linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
     <news>
 docker.linuxserver.letsencrypt:
 -------------------------------
+
+1.0.4
+- Stall systemd if variables are not set
 
 1.0.3
 - Update dockerhub image links
