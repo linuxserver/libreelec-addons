@@ -5,7 +5,7 @@
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
-~~This is the x86/arm combined repo. Note: These addons do not work on aarch64 builds.~~Aarch64 support added  
+~~This is the x86/arm combined repo. Note: These addons do not work on aarch64 builds.~~ Aarch64 support added  
 
 This is the x86/arm/aarch64 combined repo.
 
