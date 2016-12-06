@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.sabnzbd"
        name="SABnzbd (LinuxServer.io)"
-       version="1.0.2"
-       provider-name="linuxserver.io">
+       version="1.0.3"
+       provider-name="LinuxServer.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -16,14 +16,17 @@
     <description>
 SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.
 
-This is a docker container brought to you by the LinuxServer team.
-Please visit www.linuxserver.io for more information.
+This is a docker container brought to you by the LinuxServer.io team.
+Please visit https://linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
     <news>
 docker.linuxserver.sabnzbd:
 ---------------------------
+
+1.0.3
+- Added aarch64 support
 
 1.0.2
 - Run as user nobody

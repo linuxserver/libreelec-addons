@@ -1,5 +1,8 @@
 docker.linuxserver.transmission:
 --------------------------------
 
+1.0.1
+- Added aarch64 support
+
 1.0.0
 - Initial release

@@ -1,6 +1,9 @@
 docker.linuxserver.letsencrypt:
 -------------------------------
 
+1.0.5
+- Added aarch64 support
+
 1.0.4
 - Stall systemd if variables are not set
 
