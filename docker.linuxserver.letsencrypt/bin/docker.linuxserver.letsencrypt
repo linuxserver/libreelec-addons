@@ -11,11 +11,8 @@ LEARCHVAR=`sed -e '/LIBREELEC_ARCH/ !d' -e 's/[^.]*\.\([^"]*\).*/\1/' /etc/os-re
 #figure out which docker hub image to use
 if [ "$LEARCHVAR" = "x86_64" ]; then
   DOCKERIMAGE="linuxserver/letsencrypt"
-elif [ "$LEARCHVAR" = "arm" ]; then
+elif [ "$LEARCHVAR" = "arm" ] || [ "$LEARCHVAR" = "aarch64" ]; then
   DOCKERIMAGE="lsioarmhf/letsencrypt"
-else
-  echo "sorry, arm or x86_64 only"
-  exit 1
 fi
 
 docker rm "$name" 2>/dev/null

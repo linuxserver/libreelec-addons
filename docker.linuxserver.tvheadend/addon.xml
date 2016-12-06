@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.tvheadend"
        name="TVheadend (LinuxServer.io)"
-       version="1.0.1"
-       provider-name="linuxserver.io">
+       version="1.0.2"
+       provider-name="LinuxServer.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -16,14 +16,17 @@
     <description>
 Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT>IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).
 
-This is a docker container brought to you by the LinuxServer team.
-Please visit www.linuxserver.io for more information.
+This is a docker container brought to you by the LinuxServer.io team.
+Please visit https://linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
     <news>
 docker.linuxserver.tvheadend:
 -----------------------------
+
+1.0.2
+- Added aarch64 support
 
 1.0.1
 - Fix config location

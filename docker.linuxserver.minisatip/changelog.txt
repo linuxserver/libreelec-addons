@@ -1,6 +1,9 @@
 docker.linuxserver.minisatip:
 -----------------------------
 
+1.0.4
+- Added aarch64 support
+
 1.0.3
 - Fix default settings
 

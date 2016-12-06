@@ -1,6 +1,9 @@
 docker.linuxserver.mariadb:
 ---------------------------
 
+1.0.3
+- Added aarch64 support
+
 1.0.2
 - Run as user nobody
 
