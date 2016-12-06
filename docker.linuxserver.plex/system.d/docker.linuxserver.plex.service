@@ -6,14 +6,10 @@ After=service.system.docker.service
 [Service]
 Restart=always
 RestartSec=10s
+StartLimitInterval=86400
+StartLimitBurst=3
 TimeoutStartSec=0
 ExecStart=/bin/sh /storage/.kodi/addons/%p/bin/%p
-ExecStartPost=/bin/sh -c 'for i in {. . . . . . . . . . . . . . . . . . . .}; do sleep 15 && [[ ! -z "$(ps | grep s6-supervise | grep avahi | grep -v grep)" ]] && /storage/.kodi/addons/service.system.docker/bin/docker exec docker.linuxserver.plex s6-svc -O /var/run/s6/services/avahi && break; done'
-ExecStop=/storage/.kodi/addons/service.system.docker/bin/docker kill %p
-
-[Install]
-WantedBy=multi-user.target
-
 ExecStop=/storage/.kodi/addons/service.system.docker/bin/docker kill %p
 
 [Install]

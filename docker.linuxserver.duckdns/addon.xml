@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.duckdns"
        name="DuckDNS (LinuxServer.io)"
-       version="1.0.5"
-       provider-name="linuxserver.io">
+       version="1.0.6"
+       provider-name="LinuxServer.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -16,15 +16,18 @@
     <description>
 Duckdns is a free dynamic DNS service hosted on Amazon VPC. Unlike most other free dynamic DNS providers, DuckDNS accounts do not require periodic user action to keep them alive. Visit www.duckdns.org to register your domain.
 
-This docker container is brought to you by the LinuxServer team.
-Please visit www.linuxserver.io for more information.
+This docker container is brought to you by the LinuxServer.io team.
+Please visit https://linuxserver.io for more information.
     </description>
     <disclaimer>
 Please visit www.duckdns.org to get a custom url and token
     </disclaimer>
     <news>
 docker.linuxserver.duckdns:
-------------------------
+---------------------------
+
+1.0.6
+- Added aarch64 support
 
 1.0.5
 - Update image links

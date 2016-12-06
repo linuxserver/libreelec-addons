@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.beets"
        name="Beets (LinuxServer.io)"
-       version="1.0.2"
-       provider-name="linuxserver.io">
+       version="1.0.3"
+       provider-name="LinuxServer.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -16,14 +16,17 @@
     <description>
 Beets is a music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.
 
-This is a docker container brought to you by the LinuxServer team.
-Please visit www.linuxserver.io for more information.
+This is a docker container brought to you by the LinuxServer.io team.
+Please visit https://linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
     <news>
 docker.linuxserver.beets:
 -------------------------
+
+1.0.3
+- Add aarch64 support
 
 1.0.2
 - Fix port mapping typo

@@ -2,6 +2,7 @@
 
 name="$(basename $0)"
 . /etc/profile
+. /storage/.cache/timezone
 oe_setup_addon "$name"
 
 #get arch variable from os
@@ -10,11 +11,8 @@ LEARCHVAR=`sed -e '/LIBREELEC_ARCH/ !d' -e 's/[^.]*\.\([^"]*\).*/\1/' /etc/os-re
 #figure out which docker hub image to use
 if [ "$LEARCHVAR" = "x86_64" ]; then
   DOCKERIMAGE="linuxserver/plexpy"
-elif [ "$LEARCHVAR" = "arm" ]; then
+elif [ "$LEARCHVAR" = "arm" ] || [ "$LEARCHVAR" = "aarch64" ]; then
   DOCKERIMAGE="lsioarmhf/plexpy"
-else
-  echo "sorry, arm or x86_64 only"
-  exit 1
 fi
 
 docker rm "$name" 2>/dev/null
@@ -23,7 +21,7 @@ docker rmi $(docker images | grep "$DOCKERIMAGE" | grep '<none>' | sed 's/\s\+/\
 docker run --name="$name" \
            -e PUID="65534" \
            -e PGID="100" \
-           -e TZ="$(xmlstarlet sel -t -m '//timezone[1]' -v . -n </storage/.kodi/userdata/guisettings.xml)" \
+           -e TZ="$TIMEZONE" \
            -v "$V_config":/config \
            -v "$V_logs":/logs \
            -p "$P_port":8181 \

@@ -1,6 +1,9 @@
 docker.linuxserver.tvheadend:
 -----------------------------
 
+1.0.2
+- Added aarch64 support
+
 1.0.1
 - Fix config location
 

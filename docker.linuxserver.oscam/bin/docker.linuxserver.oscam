@@ -26,11 +26,8 @@ fi
 #figure out which docker hub image to use
 if [ "$LEARCHVAR" = "x86_64" ]; then
   DOCKERIMAGE="linuxserver/oscam"
-elif [ "$LEARCHVAR" = "arm" ]; then
+elif [ "$LEARCHVAR" = "arm" ] || [ "$LEARCHVAR" = "aarch64" ]; then
   DOCKERIMAGE="lsioarmhf/oscam"
-else
-  echo "sorry, arm or x86_64 only"
-  exit 1
 fi
 
 docker rm "$name" 2>/dev/null

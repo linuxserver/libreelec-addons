@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.thelounge"
        name="TheLounge (LinuxServer.io)"
-       version="1.0.0"
-       provider-name="linuxserver.io">
+       version="1.0.1"
+       provider-name="LinuxServer.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -16,14 +16,17 @@
     <description>
 TheLounge (a fork of shoutIRC) is a web IRC client that you host on your own server. * Multiple user support * Stays connected even when you close the browser * Connect from multiple devices at once * Responsive layout — works well on your smartphone
 
-This is a docker container brought to you by the LinuxServer team.
-Please visit www.linuxserver.io for more information.
+This is a docker container brought to you by the LinuxServer.io team.
+Please visit https://linuxserver.io for more information.
     </description>
     <disclaimer>
     </disclaimer>
     <news>
 docker.linuxserver.thelounge:
 -----------------------------
+
+1.0.1
+- Added aarch64 support
 
 1.0.0
 - Initial release

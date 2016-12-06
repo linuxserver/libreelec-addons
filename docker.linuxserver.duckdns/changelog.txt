@@ -1,5 +1,8 @@
 docker.linuxserver.duckdns:
-------------------------
+---------------------------
+
+1.0.6
+- Added aarch64 support
 
 1.0.5
 - Update image links

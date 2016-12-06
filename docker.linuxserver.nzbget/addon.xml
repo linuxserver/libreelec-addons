@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.nzbget"
        name="Nzbget (LinuxServer.io)"
-       version="1.0.2"
-       provider-name="linuxserver.io">
+       version="1.0.3"
+       provider-name="LinuxServer.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -16,14 +16,17 @@
     <description>
 NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.
 
-This is a docker container brought to you by the LinuxServer team.
-Please visit www.linuxserver.io for more information.
+This is a docker container brought to you by the LinuxServer.io team.
+Please visit https://linuxserver.io for more information.
 
 Default user:pass are nzbget:tegbzn6789 (Change ASAP)
     </description>
     <news>
 docker.linuxserver.nzbget:
 --------------------------
+
+1.0.3
+- Added aarch support
 
 1.0.2
 - Change user to nobody
