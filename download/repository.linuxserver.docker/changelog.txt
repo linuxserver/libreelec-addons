@@ -1,5 +1,9 @@
 repository.linuxserver:
 -----------------------
+80.1.100
+- Rename to extended repo
+- Bump version
+
 1.0.4
 - Tweaked some naming conventions
 
