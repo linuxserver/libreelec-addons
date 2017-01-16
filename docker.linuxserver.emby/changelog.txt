@@ -1,0 +1,5 @@
+docker.linuxserver.emby:
+------------------------
+
+1.0.0
+- Initial addon
