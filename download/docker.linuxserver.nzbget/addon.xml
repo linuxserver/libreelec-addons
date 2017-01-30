@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.nzbget"
        name="Nzbget (LinuxServer.io)"
-       version="1.0.3"
+       version="1.0.4"
        provider-name="LinuxServer.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
@@ -24,6 +24,9 @@ Default user:pass are nzbget:tegbzn6789 (Change ASAP)
     <news>
 docker.linuxserver.nzbget:
 --------------------------
+
+1.0.4
+- Fix timezone bug
 
 1.0.3
 - Added aarch support
