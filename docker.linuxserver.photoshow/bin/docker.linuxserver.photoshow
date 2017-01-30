@@ -2,7 +2,13 @@
 
 name="$(basename $0)"
 . /etc/profile
-. /storage/.cache/timezone
+
+if [ -f /storage/.cache/timezone ]; then
+ . /storage/.cache/timezone
+else
+ TIMEZONE="America/New_York"
+fi
+
 oe_setup_addon "$name"
 
 #get arch variable from os
