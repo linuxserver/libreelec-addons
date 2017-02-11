@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon
+  id="repository.linuxserver.docker.ext"
+  name="LinuxServer.io's Extended Docker Add-ons"
+  version="1.0.0"
+  provider-name="linuxserver.io">
+  <requires>
+    <import addon="xbmc.addon"
+            version="16.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository"
+             name="LinuxServer.io's Extended Docker Add-on Repository">
+    <info compressed="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/download</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Install add-ons from LinuxServer.io's docker repository</summary>
+    <description>
+Download and install docker container add-ons from the LinuxServer.io repository. This is the extended repo.
+
+Please visit https://linuxserver.io for more information.
+    </description>
+    <disclaimer> </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
