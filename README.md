@@ -9,4 +9,4 @@
 
 This is the x86/arm/aarch64 combined repo containing docker wrapper addons that did not make it into the LibreELEC repo.
 
-Grab the repository.linuxserver.docker.ext-1.0.0.zip file, install from zip in libreelec and you can install the addons from the repo list in the gui.
+Grab the repository.linuxserver.docker.ext.zip file, install from zip in libreelec and you can install the addons from the repo list in the gui.
