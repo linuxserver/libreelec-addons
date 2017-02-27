@@ -1,4 +1,0 @@
-<settings>
-    <setting id="V_config" value="/storage/.kodi/userdata/addon_data/docker.linuxserver.thelounge/config" />
-    <setting id="P_port" value="9001" />
-</settings>

@@ -1,5 +1,0 @@
-docker.linuxserver.portainer:
------------------------------
-
-1.0.0
-- Initial release
