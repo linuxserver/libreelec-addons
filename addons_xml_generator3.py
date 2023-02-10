@@ -145,7 +145,7 @@ if (__name__ == "__main__"):
         zipsdir = rootdir + os.sep + 'download'   
         filesinrootdir = os.listdir(rootdir)
         
-        for x in filesinrootdir:
+        for x in sorted(filesinrootdir):
             if re.search("^(context|plugin|script|service|skin|repository|docker)" , x) and not re.search('.zip', x):
                 zipfilename = x + '.zip'
                 zipfilenamefirstpart = zipfilename[:-4]
@@ -183,7 +183,7 @@ if (__name__ == "__main__"):
                             m = md5.new(open("%s" % (zipsfolder + x + version + '.zip'), "r").read()).hexdigest()
                         except ImportError:
                             import hashlib
-                            m = hashlib.md5(open("%s" % (zipsfolder + x + version + '.zip'), "r", encoding="UTF-8").read().encode("UTF-8")).hexdigest()
+                            m = hashlib.md5(open("%s" % (zipsfolder + x + version + '.zip'), "rb").read()).hexdigest()
                         try:
                             open("%s" % (zipsfolder + x + version + '.zip.md5'), "wb").write(m.encode("UTF-8"))
                             print("zip.md5 file created\n")
@@ -200,6 +200,9 @@ if (__name__ == "__main__"):
                             print('Cannot create zip file\nshutil %s\n' % e)
                 else:
                     print('Zip file for %s version %s already exists, skipping moving files and zip creation.\n' % (x, version)) 
+
+                if (x == "repository.linuxserver.docker.ext"):
+                    shutil.copyfile(os.path.join(zipsfolder + x + version + '.zip'), os.path.join(x + '.zip'))
     except Exception as e:
         print('Cannot create or move the needed files\n%s' % e)
     print('Done')
