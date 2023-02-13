@@ -1,0 +1,4 @@
+<settings>
+    <setting id="V_config" value="/storage/.kodi/userdata/addon_data/docker.linuxserver.jackett/config" />
+    <setting id="P_port" value="9117" />
+</settings>
