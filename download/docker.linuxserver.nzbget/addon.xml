@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.nzbget"
        name="Nzbget (LinuxServer.io)"
-       version="1.0.4"
+       version="2.0.0"
        provider-name="LinuxServer.io">
   <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="service.system.docker" version="0.0.0" />
   </requires>
   <extension point="xbmc.service" library="default.py">
@@ -24,6 +23,12 @@ Default user:pass are nzbget:tegbzn6789 (Change ASAP)
     <news>
 docker.linuxserver.nzbget:
 --------------------------
+
+2.0.0
+- Upgrade for Kodi v20:
+  - Remove LE dependency
+  - Upgrade `xbmc.python` dependency to 3.0.0
+  - Always use the multi-arch docker image
 
 1.0.4
 - Fix timezone bug

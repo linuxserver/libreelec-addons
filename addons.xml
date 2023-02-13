@@ -1,12 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="docker.linuxserver.radarr"
-       name="Radarr (LinuxServer.io)"
-       version="1.0.0"
+<addon id="docker.linuxserver.sonarr"
+       name="Sonarr (LinuxServer.io)"
+       version="2.0.0"
        provider-name="LinuxServer.io">
   <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Sonarr in a docker container</summary>
+    <description>
+Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.
+
+This is a docker container brought to you by the LinuxServer.io team.
+Please visit https://linuxserver.io for more information.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <news>
+docker.linuxserver.sonarr:
+--------------------------
+
+2.0.0
+- Upgrade for Kodi v20:
+  - Remove LE dependency
+  - Upgrade `xbmc.python` dependency to 3.0.0
+  - Always use the multi-arch docker image
+
+1.0.4
+- Fix timezone bug
+
+1.0.3
+- Added aarch64 support
+
+1.0.2
+- Run as user nobody
+
+1.0.1
+- Unified addon for x86_64 and arm
+
+1.0.0
+-Initial release
+    </news>
+    <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="docker.linuxserver.radarr"
+       name="Radarr (LinuxServer.io)"
+       version="2.0.0"
+       provider-name="LinuxServer.io">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="service.system.docker" version="0.0.0" />
   </requires>
   <extension point="xbmc.service" library="default.py">
@@ -26,6 +80,12 @@ Please visit https://linuxserver.io for more information.
 docker.linuxserver.radarr:
 --------------------------
 
+2.0.0
+- Upgrade for Kodi v20:
+  - Remove LE dependency
+  - Upgrade `xbmc.python` dependency to 3.0.0
+  - Always use the multi-arch docker image
+
 1.0.0
 -Initial release
     </news>
@@ -41,7 +101,7 @@ docker.linuxserver.radarr:
 <addon
   id="repository.linuxserver.docker.ext"
   name="LinuxServer.io's Extended Docker Add-ons"
-  version="1.0.0"
+  version="2.0.0"
   provider-name="linuxserver.io">
   <requires>
     <import addon="xbmc.addon"
@@ -49,9 +109,11 @@ docker.linuxserver.radarr:
   </requires>
   <extension point="xbmc.addon.repository"
              name="LinuxServer.io's Extended Docker Add-on Repository">
-    <info compressed="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/linuxserver/libreelec-addons/master/download</datadir>
+    <dir>
+      <info compressed="true">https://raw.githubusercontent.com/FdelMazo/libreelec-addons/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/FdelMazo/libreelec-addons/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://github.com/FdelMazo/libreelec-addons/raw/master/download</datadir>
+    </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Install add-ons from LinuxServer.io's docker repository</summary>
@@ -65,13 +127,61 @@ Please visit https://linuxserver.io for more information.
   </extension>
 </addon>
 
-<addon id="docker.linuxserver.couchpotato"
-       name="CouchPotato (LinuxServer.io)"
-       version="1.0.4"
+<addon id="docker.linuxserver.transmission"
+       name="Transmission (LinuxServer.io)"
+       version="2.0.0"
        provider-name="LinuxServer.io">
   <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Transmission in a docker container</summary>
+    <description>
+Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.
+
+This is a docker container brought to you by the LinuxServer.io team.
+Please visit https://linuxserver.io for more information.
+    </description>
+    <news>
+docker.linuxserver.transmission:
+--------------------------------
+
+2.0.0
+- Upgrade for Kodi v20:
+  - Remove LE dependency
+  - Upgrade `xbmc.python` dependency to 3.0.0
+  - Always use the multi-arch docker image
+
+1.0.2
+- Fix timezone bug
+
+1.0.1
+- Added aarch64 support
+
+1.0.0
+- Initial release
+    </news>
+    <disclaimer>
+    </disclaimer>
+    <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="docker.linuxserver.couchpotato"
+       name="CouchPotato (LinuxServer.io)"
+       version="2.0.0"
+       provider-name="LinuxServer.io">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="service.system.docker" version="0.0.0" />
   </requires>
   <extension point="xbmc.service" library="default.py">
@@ -90,6 +200,67 @@ Please visit https://linuxserver.io for more information.
     <news>
 docker.linuxserver.couchpotato:
 -------------------------------
+
+2.0.0
+- Upgrade for Kodi v20:
+  - Remove LE dependency
+  - Upgrade `xbmc.python` dependency to 3.0.0
+  - Always use the multi-arch docker image
+
+1.0.4
+- Fix timezone bug
+
+1.0.3
+- Added aarch64 support
+
+1.0.2
+- Run as user nobody
+
+1.0.1
+- Unified addon for x86_64 and arm
+
+1.0.0
+- Initial release
+    </news>
+    <platform>all</platform>
+    <website>http://linuxserver.io/</website>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="docker.linuxserver.sabnzbd"
+       name="SABnzbd (LinuxServer.io)"
+       version="2.0.0"
+       provider-name="LinuxServer.io">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>SABnzbd in a docker container</summary>
+    <description>
+SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.
+
+This is a docker container brought to you by the LinuxServer.io team.
+Please visit https://linuxserver.io for more information.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <news>
+docker.linuxserver.sabnzbd:
+---------------------------
+
+2.0.0
+- Upgrade for Kodi v20:
+  - Remove LE dependency
+  - Upgrade `xbmc.python` dependency to 3.0.0
+  - Always use the multi-arch docker image
 
 1.0.4
 - Fix timezone bug
@@ -117,11 +288,10 @@ docker.linuxserver.couchpotato:
 
 <addon id="docker.linuxserver.nzbget"
        name="Nzbget (LinuxServer.io)"
-       version="1.0.4"
+       version="2.0.0"
        provider-name="LinuxServer.io">
   <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="service.system.docker" version="0.0.0" />
   </requires>
   <extension point="xbmc.service" library="default.py">
@@ -141,6 +311,12 @@ Default user:pass are nzbget:tegbzn6789 (Change ASAP)
 docker.linuxserver.nzbget:
 --------------------------
 
+2.0.0
+- Upgrade for Kodi v20:
+  - Remove LE dependency
+  - Upgrade `xbmc.python` dependency to 3.0.0
+  - Always use the multi-arch docker image
+
 1.0.4
 - Fix timezone bug
 
@@ -152,150 +328,6 @@ docker.linuxserver.nzbget:
 
 1.0.1
 - Unified addon for x86_64 and arm
-
-1.0.0
-- Initial release
-    </news>
-    <disclaimer>
-    </disclaimer>
-    <platform>all</platform>
-    <website>http://linuxserver.io/</website>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="docker.linuxserver.sabnzbd"
-       name="SABnzbd (LinuxServer.io)"
-       version="1.0.4"
-       provider-name="LinuxServer.io">
-  <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="service.system.docker" version="0.0.0" />
-  </requires>
-  <extension point="xbmc.service" library="default.py">
-    <provides></provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>SABnzbd in a docker container</summary>
-    <description>
-SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.
-
-This is a docker container brought to you by the LinuxServer.io team.
-Please visit https://linuxserver.io for more information.
-    </description>
-    <disclaimer>
-    </disclaimer>
-    <news>
-docker.linuxserver.sabnzbd:
----------------------------
-
-1.0.4
-- Fix timezone bug
-
-1.0.3
-- Added aarch64 support
-
-1.0.2
-- Run as user nobody
-
-1.0.1
-- Unified addon for x86_64 and arm
-
-1.0.0
-- Initial release
-    </news>
-    <platform>all</platform>
-    <website>http://linuxserver.io/</website>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="docker.linuxserver.sonarr"
-       name="Sonarr (LinuxServer.io)"
-       version="1.0.4"
-       provider-name="LinuxServer.io">
-  <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="service.system.docker" version="0.0.0" />
-  </requires>
-  <extension point="xbmc.service" library="default.py">
-    <provides></provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Sonarr in a docker container</summary>
-    <description>
-Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.
-
-This is a docker container brought to you by the LinuxServer.io team.
-Please visit https://linuxserver.io for more information.
-    </description>
-    <disclaimer>
-    </disclaimer>
-    <news>
-docker.linuxserver.sonarr:
---------------------------
-
-1.0.4
-- Fix timezone bug
-
-1.0.3
-- Added aarch64 support
-
-1.0.2
-- Run as user nobody
-
-1.0.1
-- Unified addon for x86_64 and arm
-
-1.0.0
--Initial release
-    </news>
-    <platform>all</platform>
-    <website>http://linuxserver.io/</website>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="docker.linuxserver.transmission"
-       name="Transmission (LinuxServer.io)"
-       version="1.0.2"
-       provider-name="LinuxServer.io">
-  <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="service.system.docker" version="0.0.0" />
-  </requires>
-  <extension point="xbmc.service" library="default.py">
-    <provides></provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Transmission in a docker container</summary>
-    <description>
-Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.
-
-This is a docker container brought to you by the LinuxServer.io team.
-Please visit https://linuxserver.io for more information.
-    </description>
-    <news>
-docker.linuxserver.transmission:
---------------------------------
-
-1.0.2
-- Fix timezone bug
-
-1.0.1
-- Added aarch64 support
 
 1.0.0
 - Initial release

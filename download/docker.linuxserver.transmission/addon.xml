@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="docker.linuxserver.transmission"
        name="Transmission (LinuxServer.io)"
-       version="1.0.2"
+       version="2.0.0"
        provider-name="LinuxServer.io">
   <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="service.system.docker" version="0.0.0" />
   </requires>
   <extension point="xbmc.service" library="default.py">
@@ -14,7 +13,7 @@
   <extension point="xbmc.addon.metadata">
     <summary>Transmission in a docker container</summary>
     <description>
-Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more. 
+Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.
 
 This is a docker container brought to you by the LinuxServer.io team.
 Please visit https://linuxserver.io for more information.
@@ -22,6 +21,12 @@ Please visit https://linuxserver.io for more information.
     <news>
 docker.linuxserver.transmission:
 --------------------------------
+
+2.0.0
+- Upgrade for Kodi v20:
+  - Remove LE dependency
+  - Upgrade `xbmc.python` dependency to 3.0.0
+  - Always use the multi-arch docker image
 
 1.0.2
 - Fix timezone bug
